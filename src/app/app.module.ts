@@ -13,7 +13,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   imports: [
     BrowserModule,
     ComponentsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [
     provideAnimationsAsync()
