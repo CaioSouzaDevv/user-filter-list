@@ -9,7 +9,9 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     imports: [
         AngularMaterialModule
     ],
-    exports: []
+    exports: [UserDetailsComponent
+
+    ],
 })
 
 export class ComponentsModule {
