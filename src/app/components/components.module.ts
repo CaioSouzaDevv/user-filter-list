@@ -6,11 +6,14 @@ import { AngularMaterialModule } from "../angular-material/angular-material.modu
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { FilterComponent } from './filter/filter.component';
 import { CommonModule } from "@angular/common";
+import { UsersListComponent } from './users-list/users-list.component';
 
 @NgModule({
     declarations: [
         UserDetailsComponent,
-        FilterComponent
+        FilterComponent,
+        UsersListComponent,
+        UsersListComponent
         
     ],
     imports: [
@@ -20,7 +23,8 @@ import { CommonModule } from "@angular/common";
     ],
     exports: [
         UserDetailsComponent,
-        FilterComponent
+        FilterComponent,
+        UsersListComponent
 
     ],
 })
