@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IUser } from './interfaces/user/user.interface';
+import { UsersList } from './data/user-list';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  
+  userSelected: IUser = UsersList[0];
 }

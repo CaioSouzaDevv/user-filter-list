@@ -1,52 +1,36 @@
 <div class="user-details">
-<mat-list>
-    <mat-list-item class="u-text-center">
-        <span class="mat-title-medium">Detalhes do Usuário</span>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-    <mat-list-item class="mat-body">
-        <span class="mat-title-medium">Nome: </span><span class="mat-title-small">Caio Souza</span>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-
-    <mat-list-item class="mat-body">
-        <span class="mat-title-medium">Email: </span> <span class="mat-title-small"><span>Caio&#64;example.com</span></span>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-
-    <mat-list-item class="mat-body">
-        <span class="mat-title-medium">Telefone: </span><span class="mat-title-small">(11) 98469-6489</span>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-
-
-    <mat-list-item class="mat-body">
-        <span class="mat-title-medium">Telefone: </span><span class="mat-title-small">(11) 98469-6489</span>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-
-    <mat-list-item class="mat-body">
-        <span class="mat-title-medium">Endereço: </span><span class="mat-title-small">Av Cônego Jose Salomon, 714, São Paulo - SP</span>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-
-
-    <mat-list-item class="mat-body">
-        <span class="mat-title-medium">Ativo: </span><span class="mat-title-small">Sim</span>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-
-    <mat-list-item class="mat-body">
-        <span class="mat-title-medium">Função: </span><span class="mat-title-small">Bodybuilder</span>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-
-    <mat-list-item class="mat-body">
-        <span class="mat-title-medium">Data de cadastro: </span><span class="mat-title-small">02/09/2024</span>
-    </mat-list-item>
-    <mat-divider></mat-divider>
-
-
-    
-</mat-list>
+    <mat-list>
+        <mat-list-item class="u-text-align-center">
+            <span class="mat-h2">Detalhes do Usuário</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <span class="mat-h2">Nome: </span><span class="mat-h3">{{ user.nome }}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <span class="mat-h2">Email: </span> <span class="mat-h3">{{ user.email }}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <span class="mat-h2">Telefone: </span> <span class="mat-h3">{{ user.telefone }}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <span class="mat-title-small">{{ user.endereco.rua }}, {{ user.endereco.numero }}, {{ user.endereco.cidade }} - {{ user.endereco.estado }}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <span class="mat-h2">Ativo: </span> <span class="mat-h3">{{ user.ativo }}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <span class="mat-h2">Função: </span> <span class="mat-h3">{{ user.funcao }}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <span class="mat-h2">Data de Cadastro: </span> <span class="mat-h3">{{ user.dataCadastro }}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+    </mat-list>
 </div>
