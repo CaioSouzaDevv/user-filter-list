@@ -19,7 +19,7 @@ export class AppComponent implements OnInit{
     console.log('onInit');
     setTimeout(() => {
       this.usersList = UsersList
-    }, 3000);
+    }, 1);
   }
 
 
