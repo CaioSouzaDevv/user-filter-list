@@ -5,13 +5,12 @@ import { StatusPipe } from './status.pipe';
 import { DashIfEmptyPipe } from './dash-if-empty.pipe';
 
 @NgModule({
-    
     declarations: [
-    PhonePipe,
-    AddressPipe,
-    StatusPipe,
-    DashIfEmptyPipe
-  ],
+        PhonePipe,
+        AddressPipe,
+        StatusPipe,
+        DashIfEmptyPipe
+    ],
     exports: [
         PhonePipe,
         AddressPipe,
@@ -19,6 +18,4 @@ import { DashIfEmptyPipe } from './dash-if-empty.pipe';
         DashIfEmptyPipe
     ],
 })
-export class PipesModule {
-
-}
+export class PipesModule { }
